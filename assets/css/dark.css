@@ -1,3 +1,45 @@
 :root {
-  --main-color: #0c151d;
+    --main-color: #020202;
+    --primary-color: #fff;
+    --section-color: #252525;
+    --Secondary-color: #ffb800;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--primary-color) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--Secondary-color);
+}
+
+.hero-dora-image img {
+    border: 2px solid var(--Secondary-color);
+}
+
+.social-link a {
+    color: var(--primary-color);
+}
+
+.hero-cta-buttons a {
+    color: var(--primary-color) !important;
+    background-color: inherit;
+    border: 2px solid var(--Secondary-color);
+}
+
+.hero-cta-buttons a:hover {
+    color: var(--Secondary-color) !important;
+    background-color: var(--section-color);
+    border: none;
+}
+
+
+#about {
+    background-color: var(--section-color);
 }

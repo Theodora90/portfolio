@@ -1,5 +1,6 @@
-/* Font */
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
 /* General tyles */
 * {
@@ -10,14 +11,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Permanent Marker", cursive;
 }
 
 img {
@@ -26,4 +29,68 @@ img {
   object-fit: cover;
 }
 
-/* navigation styles */
+/* Hero Introduction styles */
+#hero {
+  padding: 6%;
+}
+
+.hero-dora-image {
+  width: 30%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.hero-dora-image img {
+  width: 150px;
+  height: 150px;
+  border-width: thick;
+  border-radius: 50%;
+}
+
+.social-link {
+  text-align: center;
+}
+
+.social-link span {
+  margin: 3px;
+}
+
+.social-link span a i {
+  font-size: 18px;
+}
+
+.hero-cta-buttons {
+  text-align: center;
+  margin: 4% auto;
+}
+
+.hero-cta-buttons a {
+  border-radius: 3px;
+  margin: 0 7px;
+}
+
+/* ABOUT */
+
+#about {
+  padding: 5% 0;
+}
+
+#about ul {
+  list-style: square inside url("/assets/image/ellipse.png");
+}
+
+.about-image {
+  background-image: url('/assets/image/Background\ image.png');
+  border-radius: 15px;
+}
+
+.about-text {
+  margin-top: 23%;
+}
+
+
+/*PROJECTS  */
+#projects{
+  padding: 5% 0;
+}
