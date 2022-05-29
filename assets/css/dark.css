@@ -10,6 +10,10 @@ body {
     color: var(--primary-color) !important;
 }
 
+#light {
+    display: none;
+}
+
 h1,
 h2,
 h3,
@@ -42,4 +46,30 @@ h6 {
 
 #about {
     background-color: var(--section-color);
+}
+
+.overlay {
+    background-color: var(--Secondary-color);
+}
+
+.text {
+    color: var(--main-color);
+}
+
+
+#footer {
+    background-color: var(--Secondary-color);
+}
+
+#footer .nav-link {
+    color: var(--main-color);
+}
+
+#footer .nav-link:hover {
+    color: var(--primary-color);
+}
+
+#footer h5 {
+    color: var(--main-color);
+    margin-top: 13px;
 }

@@ -32,6 +32,7 @@ img {
 /* Hero Introduction styles */
 #hero {
   padding: 6%;
+  overflow: hidden !important;
 }
 
 .hero-dora-image {
@@ -74,6 +75,7 @@ img {
 
 #about {
   padding: 5% 0;
+  overflow: hidden !important;
 }
 
 #about ul {
@@ -91,6 +93,114 @@ img {
 
 
 /*PROJECTS  */
-#projects{
+#projects {
   padding: 5% 0;
+  overflow: hidden !important;
+}
+
+
+.project-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.project-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+/* FOOTER */
+#footer {
+  padding: 17px 0;
+  overflow: hidden !important;
+}
+
+#footer p {
+  margin-top: 1% !important;
+}
+
+#footer p span {
+  margin: 3px;
+}
+
+
+/* IPAD RULES */
+@media screen and (min-width: 481px) and (max-width: 884px) and (orientation: portrait) {
+  #projects .row {
+    margin-top: 2% !important;
+  }
+
+  #projects .col-lg-4 {
+    margin-top: 7%;
+  }
+}
+
+
+/* MOBILE RULES */
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+  .hero-dora-image {
+    width: 50%;
+  }
+
+  .hero-cta-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12%;
+  }
+
+  .hero-cta-buttons a {
+    margin-top: 8% !important;
+    text-align: center;
+    margin-right: 0px !important;
+  }
+
+  #about,
+  #projects {
+    padding: 10% 0;
+  }
+
+  #about h5,
+  p {
+    text-align: center;
+  }
+
+  #projects .row {
+    margin-top: 2% !important;
+  }
+
+  #projects .col-lg-4 {
+    margin-top: 7%;
+  }
+}
+
+@media screen and (min-width: 580px) and (max-width: 926px) and (orientation: landscape) {
+  #projects .row {
+    margin-top: 2% !important;
+  }
+
+  #projects .col-lg-4 {
+    margin-top: 7%;
+  }
 }

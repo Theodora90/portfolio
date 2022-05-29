@@ -1,0 +1,97 @@
+:root {
+    --main-color: #020202;
+    --primary-color: rgba(255, 255, 255, 0.641);
+    --section-color: #252525;
+    --Secondary-color: #ffb800;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: var(--main-color) !important;
+}
+
+#dark {
+    display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--Secondary-color);
+}
+
+.navbar-brand {
+    color: var(--main-color) !important;
+}
+
+.navbar-brand:hover {
+    color: var(--Secondary-color) !important;
+}
+
+.nav-link {
+    color: var(--main-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--Secondary-color) !important;
+}
+
+.hero-dora-image img {
+    border: 2px solid var(--Secondary-color);
+}
+
+.social-link a {
+    color: var(--main-color);
+}
+
+.hero-cta-buttons a {
+    color: var(--Secondary-color) !important;
+    background-color: inherit;
+    border: 2px solid var(--Secondary-color);
+}
+
+.hero-cta-buttons a:hover {
+    color: var(--Secondary-color) !important;
+    background-color: var(--section-color);
+    border: none;
+}
+
+
+#about {
+    background-color: var(--section-color);
+    color: var(--primary-color);
+}
+
+#projects a img {
+    border: 2px solid var(--Secondary-color) !important;
+    border-image-width: 10px;
+    border-width: thick;
+}
+
+.overlay {
+    background-color: var(--Secondary-color);
+}
+
+.text {
+    color: var(--main-color);
+}
+
+#footer {
+    background-color: var(--Secondary-color);
+}
+
+#footer .nav-link {
+    color: var(--main-color);
+}
+
+#footer .nav-link:hover {
+    color: var(--primary-color);
+}
+
+#footer h5 {
+    color: var(--main-color);
+    margin-top: 13px;
+}
